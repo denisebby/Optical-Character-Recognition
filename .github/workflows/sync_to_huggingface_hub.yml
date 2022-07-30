@@ -16,4 +16,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://cap99:$HF_TOKEN@huggingface.co/spaces/cap99/ocr main
+        run: git push --force https://cap99:$HF_TOKEN@huggingface.co/spaces/cap99/ocr main
